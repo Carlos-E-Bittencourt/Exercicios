@@ -14,11 +14,11 @@ verificarPar(10)
 let n1 = prompt("Digita o primeiro numero");
 let n2 = prompt("Digita o segundo numero");
 
-function calcular() {
+function calcular(n1, n2) {
   console.log(parseInt(n1) + parseInt(n2));
   console.log(n1 - n2);
   console.log(n1 * n2);
-  console.log(n1 / n2)
+  console.log(n1 / n2);
 }
 
 calcular()
@@ -33,7 +33,7 @@ while (i > 0) {
 //EX4
 let text = prompt("Qual palavra deseja inverter?")
 
-function inverterTexto() {
+function inverterTexto(text) {
     console.log(text.split('').reverse().join(''))
 }
 
@@ -42,7 +42,7 @@ inverterTexto()
 //EX5
 let palavra = prompt('Qual palavra deseja saber o numerode caracteres?')
 
-function contarCaracteres() {
+function contarCaracteres(palavra) {
   console.log(palavra + " - " + palavra.length + " caracteres")
 }
 
@@ -53,7 +53,7 @@ const carro = {
   marca: "Koenigsegg",
   modelo: "Agera",
   ano: 2010,
-  printModel: function () {
+  printModel: function (modelo) {
       console.log("O modelo do carro é " + this.modelo)
   }
 }
@@ -82,7 +82,7 @@ media()
 
 //EX9
 let mult3 = [];
-let ñmult3 = [];
+let nmult3 = [];
 let a = 0;
 let b = 0;
 
@@ -91,14 +91,14 @@ for (let i = 1; i < 21; i++) {
         mult3[a] = i;
         a++;
     } else {
-        ñmult3[b] = i;
+        nmult3[b] = i;
         b++;
     }
 } 
 
-function tabelation() {
+function tabelation(mult3, nmult3) {
     console.log("Multiplos de 3: " + mult3);
-    console.log("Não multiplos de 3: " + ñmult3);
+    console.log("Não multiplos de 3: " + nmult3);
 }
 
 tabelation()
